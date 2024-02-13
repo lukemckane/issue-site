@@ -21,7 +21,24 @@ body {
 	border-width:2px;
 	border-style:solid;
 	border-color:black;
+	color: white;
+	font-size: 300%;
 
+}
+
+.miniHead {
+	width: 100%;
+	height: 15%;
+	background-image: url('ggbSunset.jpg');
+	background-size: cover;
+	background-position: center;
+	background-color: grey;
+	margin: 0px;
+	padding: 0px;
+	border-width:2px;
+	border-style:solid;
+	border-color:black;
+	position: relative;
 }
 
 .main {
@@ -49,30 +66,40 @@ body {
 #homeLeft {
 	width: 33%;
 	height: 100%;
+	overflow: auto;
 
 }
 
 #homeRight {
 	width: 67%;
 	height: 100%;
+	background-image: url('homeless.jpg');
+	background-size: cover;
+	background-position: center;
 
 }
 
 .pageLink {
-	background-color: grey;
+	background-color: #c0362c;
 	margin: 0px;
-	padding: 0px;
+	padding: 5px;
 	border-width:2px;
 	border-style:solid;
 	border-color:black;
 	width: 100%;
 	height: 50%;
+	color: white;
+	overflow: auto;
+	position: relative;
+	text-align: center;
 
 }
 
 #causesLeft {
 	width: 33%;
 	height: 100%;
+	background-color: #c0362c;
+	overflow: auto;
 }
 
 #causesRight {
@@ -84,6 +111,8 @@ body {
 #resourcesLeft {
 	width: 33%;
 	height: 100%;
+	background-color: #c0362c;
+	overflow: auto;
 }
 
 #resourcesRight {
@@ -95,6 +124,23 @@ body {
 .examples {
 	display: block;
 	width: 100%;
+	height: auto;
+	background-color: #c0362c;
+	margin: 0px;
+	padding: 0px;
+	border-width:2px;
+	border-style:solid;
+	border-color:black;
+	position: relative;
+	color: white;
+	font-size: 20px;
+	padding: 5px;
+	text-align: left;
+}
+
+.resources {
+	display: block;
+	width: 100%;
 	height: 33%;
 	background-color: #c0362c;
 	margin: 0px;
@@ -103,12 +149,18 @@ body {
 	border-style:solid;
 	border-color:black;
 	position: relative;
+	color: white;
+	font-size: 20px;
+	padding: 5px;
+	text-align: left;
 }
 
 .exampleImage {
 	display: block;
 	width: 100%;
-	height: auto;
+#	height: auto;
+	background-size: cover;
+	background-position: center;
 }
 
 .overlay {
@@ -119,25 +171,81 @@ body {
 	right: 0;
 	height: 100%;
 	width: 100%;
+	border-width:2px;
 	visibility: hidden;
 	opacity: 0;
 	transition: .5s ease;
 	background-color: #c0362c;
 }
 
-.sections:hover, .container:hover .overlay {
+.sections:hover, .examples:hover .overlay {
 	visibility: visible;
-  opacity: 1;
+	opacity: 1;
+}
+
+.overlayHome {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	border-width:2px;
+	visibility: hidden;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #c0362c;
+}
+
+.miniHead:hover .overlayHome {
+	visibility: visible;
+	opacity: 0.5;
+
 }
 
 .exampleText {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center
+	padding: 5px;
+	text-align: left;
 }
+
+#cause1 {
+	background-image: url('housingCrisis.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+#resource1 {
+	background-image: url('ggbSunset.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.pageDescription {
+	display: block;
+	width: 100%;
+	height: 85%;
+	background-color: #c0362c;
+	margin: 0px;
+	padding: 0px;
+	border-width:2px;
+	border-style:solid;
+	border-color:black;
+	position: relative;
+	color: white;
+	font-size: 20px;
+	padding: 5px;
+	text-align: left;
+}
+
+.link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
